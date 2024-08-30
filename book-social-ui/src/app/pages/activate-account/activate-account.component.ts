@@ -1,10 +1,16 @@
 import {Component} from '@angular/core';
-import {Router} from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
+
 import {AuthenticationService} from '../../services/services/authentication.service';
 import {skipUntil} from 'rxjs';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { CodeInputModule } from 'angular-code-input';
 
 @Component({
 selector: 'app-activate-account',
+standalone: true,
+imports: [RouterModule, FormsModule, CommonModule, CodeInputModule], 
 templateUrl: './activate-account.component.html',
 styleUrls: ['./activate-account.component.scss']
 })
