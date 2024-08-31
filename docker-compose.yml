@@ -4,7 +4,7 @@ services:
     image: postgres
     environment:
       POSTGRES_USER: innosoc
-      POSTGRES_PASSWORD: Docker@2024d
+      POSTGRES_PASSWORD: PasswordDocker
       PGDATA: /var/lib/postgresql/data
       POSTGRES_DB: book_social_network
     volumes:
